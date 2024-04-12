@@ -29,3 +29,22 @@ var kidsWithCandies = function(candies, extraCandies) {
 };
 
 console.log(kidsWithCandies([3, 4, 1, 7, 2], 3))
+
+
+// here it is without a nested loop
+
+var kidsWithCandies = function(candies, extraCandies) {
+    const maxCandies = Math.max(...candies);
+    
+    const result = [];
+    
+    for (let i = 0; i < candies.length; i++) {
+      if (candies[i] + extraCandies >= maxCandies) {
+        result.push(true);
+      } else {
+        result.push(false);
+      }
+    }
+    
+    return result;
+  };
