@@ -6,9 +6,30 @@
  * @param {string} s
  * @return {string}
  */
-var reverseVowels = function(s) {
+var reverseVowels = function (s) {
     const vow = "aeiouAEIOU"
-    for(let i = 0; i < s.length; i++){
-        if(vow includes s[i])
+    sArray = Array.from(s)
+
+    let temp = ""
+    let count = 1
+    for (let i = 0; i < sArray.length; i++) {
+        if (vow.includes(sArray[i])) {
+            temp += sArray[i]
+            console.log(temp)
+        }
+
     }
+    for (let j = 0; j < sArray.length; j++) {
+        if (vow.includes(sArray[j])) {
+            sArray[j] = temp[temp.length - count]
+            count++
+        }
+console.log(sArray)
+    }
+    s = sArray.join('')
+    return s
 };
+
+console.log(reverseVowels("trickortreat"))
+
+// accepted runtime beats 52% 
