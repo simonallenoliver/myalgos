@@ -22,3 +22,5 @@ var canPlaceFlowers = function(flowerbed, n) {
     if(n > 0){return false}
     else{return true}
 };
+
+console.log(canPlaceFlowers)
