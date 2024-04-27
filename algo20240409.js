@@ -41,7 +41,7 @@ console.log(memoizedSum(2, 3)); // Output: 5
 var mergeAlternately = function (word1, word2) {
     let result = ""
     for (let i = 0; i < Math.max(word1.length, word2.length); i++) {
-        if (word1[i]) result += word1[i] // bracketless syntax works because it's inb the same line 
+        if (word1[i]) result += word1[i] // bracketless syntax works because it's in the same line 
         if (word2[i]) {
             result += word2[i]
         }
