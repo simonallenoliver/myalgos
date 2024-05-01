@@ -22,7 +22,7 @@ var findMaxAverage = function(nums, k) {
 
 console.log(findMaxAverage([1,12,-5,-6,50,3], 4))
 
-// welp this just finds the max average, but we need to find the max average of a contiguous sub array so no sorting allowed
+// welp this above way just finds the max average, but we need to find the max average of a contiguous sub array so no sorting allowed
 
 // this one works 
 var findMaxAverage = function(nums, k) {
