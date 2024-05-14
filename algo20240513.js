@@ -53,5 +53,5 @@ for(let i = 0; i < freq1.length; i++){
 }
 return true
 };
-};
+
 
