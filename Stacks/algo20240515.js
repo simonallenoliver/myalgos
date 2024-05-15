@@ -25,21 +25,67 @@
 // A Stack is used by compilers in programming languages, by computer memory to store variables and function calls,
 // and in text editors to perform undo & redo operations.
 
+
+// here we have set up our Stack class with it's essential methods
+
 class Stack {
     constructor()
     {
         this.items = [];
     }
-    // push
+    // push adds to top
     push(element)
     {
         this.items.push(element);
     }
-    // pop
-
-    // peek
-
+    // pop returns top most item and deletes it
+    pop()
+    {
+        if (this.items.length == 0){
+            return "Underflow"
+        }
+        else{
+            return this.items.pop();
+        }
+    }
+    // peek returns the top most element of stack without deleting it
+    peek()
+    {
+        return this.items[this.items.length - 1];
+    }
     // isEmpty
+    isEmpty()
+    {
+        return this.items.length == 0;
+    }
 
     // printStack
+    printStack()
+    {
+        let str = "";
+        for (let i = 0; i < this.items.length; i++){
+            str += this.items[i]
+        }
+        return str;
+    }
 }
+
+// and here is the solution to the algo -
+
+var removeStars = function(s) {
+    // we create an instance of our Stack class and name it stack (original right)
+    let stack = new Stack();
+    // we loop through the provided string s and 
+    for(let i = 0; i < s.length; i++){
+        // we add all the non-star characters to the stack
+        if(s[i] !== "*"){
+            stack.push(s[i])
+        }
+        // if we encounter a star we DO NOT add it to the stack and instead pop a character off the top
+        else{
+            stack.pop()
+        }
+    }
+    // we return the printed stack
+    return stack.printStack();
+};
