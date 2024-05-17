@@ -26,7 +26,21 @@
 // and in text editors to perform undo & redo operations.
 
 
-// here we have set up our Stack class with it's essential methods
+// here we have set up our Stack class with it's essential methods 
+// note this is pretty much all pre built into JS and we could just use the built in methods
+// but it's important to understand that custom built classes have some advantages over built ins:
+
+// 1- Control and Clarity. 
+// We have more control over what can and can't be done to our data; if we used a simple array and 
+// built in methods, our data may be altered in an improper manner. but this way developers encountering the code for the  
+// first time will be less likely to misunderstnad our intended data structures or accidentally screw something up
+
+// 2 - Customization. 
+// We can create additional methods for more niche requirments we may have for our data
+
+// 3 - Performance. 
+// While in some situations, it may be more performative to use JS native methods, in others we can achieve better 
+// performance, for example if we used a singley linked list in our class
 
 class Stack {
     constructor()
