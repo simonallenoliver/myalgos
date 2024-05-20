@@ -16,14 +16,14 @@
 
 // Stack Notes - https://www.freecodecamp.org/news/stack-5404d9735f88/
 
-// A stack is an ordered collection of items that follow the Last In First Out (LIFO) principle.
+// "A stack is an ordered collection of items that follow the Last In First Out (LIFO) principle.
 // The addition and removal of items take place at the same end, i.e. at the top. 
 // The newest elements are at the top, and the oldest elements are at the bottom.
 
 // We have many examples of stacks around us like a pile of books, a stack of trays or dishes, etc.
 
 // A Stack is used by compilers in programming languages, by computer memory to store variables and function calls,
-// and in text editors to perform undo & redo operations.
+// and in text editors to perform undo & redo operations."
 
 
 // here we have set up our Stack class with it's essential methods 
