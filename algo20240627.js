@@ -16,9 +16,10 @@ var canPlaceFlowers = function(flowerbed, n) {
             flowerbed[i] = 1;
             n--;
         }
+        if(n === 0)return true
     }
     // after our loop, if n is greater than 0, it means there wasn't 
     // enough room for all the flowers in our stock n
-    if(n > 0) return false;
-    return true
+    return false;
+    
 };
